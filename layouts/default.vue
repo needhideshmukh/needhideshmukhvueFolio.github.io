@@ -1,10 +1,9 @@
 <script setup>
-import { useI18n } from 'vue-i18n'
-const { locale } = useI18n({ useScope: 'global' })
+
 
 useHead({
   htmlAttrs: {
-    lang: locale,
+ 
   },
   titleTemplate: (pageTitle) => {
     return pageTitle ? `${pageTitle} - Needhi Deshmukh ` : 'Needhi Deshmukh'
@@ -55,6 +54,6 @@ useHead({
       <Navbar />
       <slot />
     </div>
-    <CookieBar />
+
   </main>
 </template>

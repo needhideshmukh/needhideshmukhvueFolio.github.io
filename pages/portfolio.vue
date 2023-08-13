@@ -112,7 +112,7 @@
 
         <li v-for="category in categories" :key="category.id" class="filter-item" @click="changeFilter(category.id)">
           <button :class="{ active: activeCategory === category.id }">
-            {{ locale === 'en' ? category.title?.en : category.title?.id_ID }}
+        
           </button>
         </li>
       </ul>
@@ -120,7 +120,7 @@
       <div class="filter-select-box">
         <button :class="{ active: filterMenu }" class="filter-select" @click="filterMenu = !filterMenu">
           <div class="select-value">
-            {{ activeCategory !== 0 ? (locale === 'en' ? activeCategoryName?.en : activeCategoryName?.id_ID) : 'Select Category' }}
+           
           </div>
 
           <div class="select-icon">
@@ -137,7 +137,7 @@
 
           <li v-for="category in categories" :key="category.id" class="select-item">
             <button @click="changeFilter(category.id)">
-              {{ locale === 'en' ? category.title?.en : category.title?.id_ID }}
+              
             </button>
           </li>
         </ul>
@@ -157,7 +157,7 @@
 
             <h3 class="project-title">{{ project.title }}</h3>
 
-            <p class="project-category">{{ locale === 'en' ? project.category.title?.en : project.category.title?.id_ID }}</p>
+            <p class="project-category"></p>
 
           </a>
         </li>
@@ -183,10 +183,10 @@
             </h4>
 
             <small class="flex items-center justify-start gap-2 text-gray-500">
-              <Icon icon="foundation:calendar" /><span>{{ locale === 'en' ? activeItem.category?.date?.en : activeItem.category?.date?.id_ID }}</span> | <Icon icon="dashicons:category" /><span>{{ locale === 'en' ? activeItem.category?.title?.en : activeItem.category?.title?.id_ID }}</span> | <Icon icon="ri:search-eye-line" /><a :href="activeItem.url" target="_blank">{{ locale === 'en' ? activeItem.desc?.en : activeItem.desc?.id_ID }}</a>
+              <Icon icon="foundation:calendar" /><span></span> | <Icon icon="dashicons:category" /><span></span> | <Icon icon="ri:search-eye-line" /><a :href="activeItem.url" target="_blank"></a>
             </small>
 
-            <p class="text-justify" v-html="locale === 'en' ? activeItem.content?.en : activeItem.content?.id_ID" />
+          
           </div>
         </section>
       </div>
@@ -218,47 +218,10 @@
 </template>
 
 <script setup>
-//  import { useI18n } from 'vue-i18n'
-// import Flicking from '@egjs/vue3-flicking'
+
 import '@egjs/vue3-flicking/dist/flicking.css'
 import { Icon } from '@iconify/vue';
 
-// useHead({
-//   title: 'Portfolio',
-// })
-
-// const { locale } = useI18n({ useScope: 'global' })
-// const { data: projects } = await useFetch('/api/projects')
-// const { data: categories } = await useFetch('/api/categories')
-
-// const projectList = [...projects.value]
-// const activeCategory = ref(0)
-// const filterMenu = ref(false)
-// const activeCategoryName = ref('')
-
-// function changeFilter(id) {
-//   activeCategory.value = id
-//   if (id !== 0)
-//     activeCategoryName.value = categories.value.find(item => item.id === id).title
-
-//   filterMenu.value = !filterMenu.value
-// }
-
-// const activeItem = ref({})
-// const activeModal = ref(false)
-// const activeOverlay = ref(false)
-
-// function showItem(id) {
-//   activeItem.value = projects.value.find(item => item.id === id)
-//   activeModal.value = true
-//   activeOverlay.value = true
-// }
-
-// function closeItem() {
-//   activeItem.value = {}
-//   activeModal.value = false
-//   activeOverlay.value = false
-// }
 </script>
 
 

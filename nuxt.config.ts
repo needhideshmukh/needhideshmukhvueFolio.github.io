@@ -1,7 +1,11 @@
+import { Head } from ".nuxt/components"
+
 export default defineNuxtConfig({
 
+
   app: {
-    baseURL: '/' // baseURL: '/<repository>/'
+    baseURL: '/' , // baseURL: '/<repository>/'
+    
   },
 
   modules: [
