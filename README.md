@@ -2,7 +2,7 @@
 </p>
 
 ### About
--   Hey there! <br>I am Needhi Deshmukh, a frontend developer with a spectacular Vue. I try finding Nuxt great opportunites to solve new problems and shape my skills. 
+Hey there! <br>I am Needhi Deshmukh, a frontend developer with a spectacular Vue. I try finding Nuxt great opportunites to solve new problems and shape my skills. 
         <br><br>
          In the dynamic world of web development, I harness the power of Vue.js, Nuxt.js, and Node.js to craft captivating user interfaces and seamless web experiences. Complemented by Express.js and SpringBoot, I build robust server-side applications and RESTful APIs for cohesive data communication.
          <br><br>
